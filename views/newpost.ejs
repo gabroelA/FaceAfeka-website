@@ -1,0 +1,21 @@
+<h2>New post</h2>
+<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+<form action="/<%= user.id %>/posts/new" method="POST" enctype="multipart/form-data">
+    <div>
+        <label> Title </label>
+        <input type="text" name="title" value="<%= post.title %>">
+    </div>
+
+    <div>
+        <label> Description </label>
+        <textarea name="description"> <%= post.description %> </textarea>
+    </div>
+
+    <div>
+        <label> Image </label>
+        <input type="file" name="image">
+    </div>
+
+    <a href="/<%= user.id %>"> Cancel </a>
+    <button type="submit"> Create </button>
+</form>

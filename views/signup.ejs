@@ -1,0 +1,29 @@
+<h1> Sign Up</h1>
+
+<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+
+<form action="/signup" method="POST">
+    <div>
+        <label>First name</label>
+        <input type="text" name="first_name" value="<%= user.first_name %>">
+    </div>
+
+    <div>
+        <label>Last name</label>
+        <input type="text" name="last_name" value="<%= user.last_name %>">
+    </div>
+        
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" value="<%= user.email %>">
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" value="<%= user.password %>">
+    </div>    
+
+    
+    <button type="submit"> SIGNUP </button>
+</form>
+<a href="/signin"> Sign in</a>

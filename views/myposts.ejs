@@ -1,0 +1,13 @@
+<h2>My posts</h2>
+<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+<div>
+    <% posts.forEach(post => { %>
+      <div> <%= post.title %>  </div>
+      <div> <img height="250" width="300" src="<%= post.imagePath %>"> <%= post.description %>  </div> 
+      
+       
+      
+    <% }) %>
+</div>
+
+<a href="/<%= user.id %>">Back</a>

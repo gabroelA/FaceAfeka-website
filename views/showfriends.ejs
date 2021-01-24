@@ -1,0 +1,14 @@
+<h2 class="page-header">All Friends</h2>
+<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+
+<br>
+<% friends.forEach(friend => { %>
+    <div class="row">
+        <%= friend.first_name %>
+        <%= friend.last_name %>
+        <br>
+        <br>
+    </div>
+<% }) %>
+
+<a class="back" href="/<%= user.id %>">Back</a>

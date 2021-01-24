@@ -1,0 +1,17 @@
+<h2 class="page-header">All Users</h2>
+<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+<form action="/<%= myuser.id %>/friends/new" method="GET">
+  
+</form>
+<br>
+<% allusers.forEach(user => { %>
+    <div class="row">
+        <%= user.first_name %>
+        <%= user.last_name %>
+        <a class="btn btn-primary" href="/<%= myuser.id %>/friends/new/<%= user.id %>">Add friend</a>
+        <br>
+        <br>
+    </div>
+<% }) %>
+
+<a class="back" href="/<%= myuser.id %>/myfriends">My friends</a>
